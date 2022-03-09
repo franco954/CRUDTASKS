@@ -5,7 +5,7 @@ const path = require('path')
 
 function getAll(request, response) {
   Task.find({}).then((result) => {
-    // response.sendFile(path.join(__dirname, 'public', '/index.html'))
+    response.sendFile(path.join(__dirname, 'public', '/index.html'))
   })
 }
 
